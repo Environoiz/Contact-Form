@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="validation.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet"/>
+    <title>Contact Form</title>
+  </head>
+
+  <body>
+    <br />
+    <h1>Contact Form</h1>
+    <br />
+    <form id="contactForm" name="contactForm" method="post">
+      <input type="text" name="name" placeholder="Full Name" />
+      <p>Names and surname must have spaces between them</p>
+
+      <input type="text" name="email" placeholder="Email" />
+      <p>Email must be a valid address, e.g. me@mydomain.com</p>
+
+      <input type="text" name="emailConf" placeholder="Email Confirmation" />
+      <p>Email must be same as Email field above</p>
+
+      <input type="text" name="address" placeholder="Address" />
+      <p>Address must contain at least street name and number</p>
+
+      <input type="text" name="telephone" placeholder="Telephone" />
+      <p>
+        Telephone must be a valid 10 digits telephone number (can include "-"
+        and 4 digit mobile country code)
+      </p>
+
+      <div id="btn">
+        <button id="register-button" type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
